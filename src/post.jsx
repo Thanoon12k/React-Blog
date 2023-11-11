@@ -1,20 +1,24 @@
-import React from 'react';
 import styles from './assets/post.module.css';
-const now =new Date()
-const nowdate=now.toDateString()
+import { Link } from "react-router-dom"
 
-function Post({ title="N/A", date=nowdate, content="no content post" }) {  
+
+function Post({ post }) {
+   
+    if (!post) {
+        return null;
+    }
     return (
         <div className={styles.post}>
             <div className={styles.postHeader}>
                 <div>
-                    <h2 className={styles.postTitle}>{title}</h2>
-                  
+                    <h2 className={styles.postTitle}>{post.title}</h2>
+
                 </div>
-                <p className={styles.postDate}>{date}</p>
+                <p className={styles.postDate}>{post.date}</p>
             </div>
             Content :
-            <p className={styles.postContent}>{content}</p>
+            <p className={styles.postContent}>{post.content}</p>
+            <Link to="/post" >Read More</Link> 
             <div>
                 <button className={styles.postButton}>Edit</button>
                 <button className={styles.postButton}>Delete</button>
