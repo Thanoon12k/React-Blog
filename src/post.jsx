@@ -1,13 +1,15 @@
 import React from 'react';
 import styles from './assets/post.module.css';
+const now =new Date()
+const nowdate=now.toDateString()
 
-function Post({ title, owner, date, content }) {
+function Post({ title="N/A", date=nowdate, content="no content post" }) {  
     return (
         <div className={styles.post}>
             <div className={styles.postHeader}>
                 <div>
                     <h2 className={styles.postTitle}>{title}</h2>
-                    <p className={styles.postOwner}>Owner : {owner}</p>
+                  
                 </div>
                 <p className={styles.postDate}>{date}</p>
             </div>
