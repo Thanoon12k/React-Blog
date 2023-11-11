@@ -1,0 +1,62 @@
+.post {
+   background-color: #f0f0f0;
+   border-radius: 10px;
+   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+   padding: 10px;
+   margin-bottom: 20px;
+   display: flex;
+   flex-direction: column;
+   max-width: 600px;
+   width: 100%;
+   margin: 10px;
+}
+
+.postHeader {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 15px;
+}
+
+.postTitle {
+   font-family: 'Roboto', sans-serif;
+   font-weight: bold;
+   font-size: 24px;
+   color: #333;
+}
+
+.postOwner {
+   font-family: 'Roboto', sans-serif;
+   font-weight: normal;
+   font-size: 18px;
+   color: #666;
+}
+
+.postDate {
+   font-family: 'Roboto', sans-serif;
+   font-weight: normal;
+   font-size: 14px;
+   color: #999;
+}
+
+.postContent {
+   font-family: 'Roboto', sans-serif;
+   font-weight: normal;
+   font-size: 16px;
+   color: #333;
+   margin-bottom: 10px;
+}
+
+.postButton {
+   background-color: #007BFF;
+   color: white;
+   padding: 10px 20px;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   margin-right: 10px;
+}
+
+.postButton:hover {
+   background-color: #0056b3;
+}
